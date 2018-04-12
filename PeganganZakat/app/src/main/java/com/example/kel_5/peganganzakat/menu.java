@@ -44,5 +44,16 @@ public class menu extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+
+        ImageView showRide3 = (ImageView) findViewById(R.id.maal);
+
+        showRide3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(menu.this, maal.class);
+                startActivity(intent3);
+            }
+        });
+
     }
 }

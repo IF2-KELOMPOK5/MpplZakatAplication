@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:background="@drawable/background_image"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut pretium nunc. Nulla aliquet consectetur finibus. Aenean id urna non erat laoreet dictum. Suspendisse id nibh dignissim, lobortis arcu in, mattis turpis. Mauris interdum, augue vitae tempor gravida, massa lectus ultrices tortor, vel feugiat purus nisl quis sem. Ut enim quam, scelerisque eu molestie ut, condimentum sit amet nisi. Nullam tristique leo sit amet interdum pharetra. Morbi porttitor ligula sed libero auctor convallis. " />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="243dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Penjelasan Singkat"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="243dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="257dp"
+            android:text="Hadist Bersangkutan"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut pretium nunc. Nulla aliquet consectetur finibus. Aenean id urna non erat laoreet dictum. Suspendisse id nibh dignissim, lobortis arcu in, mattis turpis. Mauris interdum, augue vitae tempor gravida, massa lectus ultrices tortor, vel feugiat purus nisl quis sem. Ut enim quam, scelerisque eu molestie ut, condimentum sit amet nisi. Nullam tristique leo sit amet interdum pharetra. Morbi porttitor ligula sed libero auctor convallis. " />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="500dp"
+            android:text="Calculator Zakat" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uang"
+            android:hint="Masukan Jumlah Uang"
+            android:layout_alignLeft="@+id/textView11"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="550dp"
+            />
+
+        <Button
+            android:id="@+id/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="550dp"
+            android:text="Hitung"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="600dp"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:layout_alignLeft="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:text="RP"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@+id/textView10" />
+
+
+    </RelativeLayout>
+</ScrollView>
