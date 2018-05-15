@@ -4,34 +4,27 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button menus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
 
-        ImageView showRide = (ImageView) findViewById(R.id.intro);
+        menus = (Button) findViewById(R.id.Zakat);
 
-        showRide.setOnClickListener(new View.OnClickListener() {
+        menus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Intro.class);
+                Intent intent = new Intent(MainActivity.this, menu.class);
                 startActivity(intent);
             }
 
         });
 
-        ImageView showRide1 = (ImageView) findViewById(R.id.hitung);
 
-        showRide1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, hitung.class);
-                startActivity(intent1);
-            }
-        });
     }
 }
